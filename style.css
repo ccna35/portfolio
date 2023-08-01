@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --text-color: #000814;
+  --bg-color-main: #000814;
+  --bg-color-sec: #001d3d;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+nav {
+  padding: 1rem 0;
+  background-color: var(--bg-color-main);
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 4rem;
+}
+
+nav ul li {
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 2rem;
+  color: #ffd60a;
+  text-transform: uppercase;
+}
+
+.brand span:first-child {
+  font-weight: 500;
+}
+.brand span:last-child {
+  font-weight: 200;
+}
+
+section {
+  background-color: var(--bg-color-sec);
+  color: white;
+  padding: 2rem 0;
+  height: calc(100vh - 80px);
+}
+
+section h1,
+section h3 {
+  font-weight: 300;
+}
+
+section h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+#title {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+#title span {
+  position: relative;
+  z-index: 0;
+  /* animation: changeColor 2s ease-in-out infinite alternate-reverse; */
+}
+
+#title span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background-color: #ffd60a;
+  z-index: -1;
+  transition: height 500ms;
+  /* animation: toggleHeight 2s ease-in-out infinite alternate-reverse; */
+}
+
+#title span:hover::after {
+  height: 100%;
+}
+
+@keyframes toggleHeight {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes changeColor {
+  from {
+    color: white;
+  }
+
+  to {
+    color: var(--text-color);
+  }
+}
+
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.right-panel img {
+  width: 100%;
+}
+
+.btn-group {
+  display: flex;
+  gap: 2rem;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.btn-primary {
+  background-color: #ffd60a;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
