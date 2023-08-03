@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
     <script
       src="https://kit.fontawesome.com/1ed5c32fa0.js"
       crossorigin="anonymous"
@@ -12,40 +12,294 @@
     <title>Shawky Khalil</title>
   </head>
   <body>
-    <nav>
-      <div class="container">
-        <div class="navbar">
-          <div class="brand">
-            <span>shawky</span>
-            <span>khalil</span>
-          </div>
-          <ul>
-            <li>Projects</li>
-            <li>About Me</li>
-            <li>Hire Me</li>
-          </ul>
-          <i class="fa-solid fa-moon"></i>
-        </div>
-      </div>
-    </nav>
     <main>
-      <section>
+      <section class="hero">
         <div class="container">
           <div class="box-container">
-            <div class="left-panel">
+            <div class="top-panel">
+              <div class="img-container">
+                <img src="./assets/profile-picture-2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="bottom-panel">
               <div class="intro">
-                <h1>Hello from the other side.</h1>
-                <h2>I'm Shawky Khalil</h2>
-                <h3 id="title">I'm a <span>Frontend Developer</span></h3>
+                <h1>I'm Shawky Khalil</h1>
+                <!-- <h2 id="title">
+                  I'm a
+                  <span class="mask"
+                    ><span class="mask__text"
+                      >Frontend Web Developer</span
+                    ></span
+                  >
+                </h2> -->
+                <div class="mask">
+                  <p class="mask__text">Frontend Web Developer</p>
+                </div>
+                <p>I turn ideas into &lt;code&gt;</p>
               </div>
               <div class="btn-group">
-                <button class="btn btn-primary">Hire Me</button>
-                <button class="btn">Projects</button>
+                <button class="btn btn-primary">
+                  <i class="fa-regular fa-envelope"></i> Hire Me
+                </button>
+                <button class="btn">
+                  <i class="fa-solid fa-layer-group"></i> Projects
+                </button>
+              </div>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="project">
+        <div class="container">
+          <div class="row">
+            <div class="col project-img socialhub">
+              <!-- <img src="./assets/tesla-full-website.png" alt="tesla homepage" /> -->
+            </div>
+            <div class="col project-description">
+              <h2 class="project__title">SocialHub</h2>
+              <p class="project__details">
+                A full-stack social media app built with React, Firebase &
+                Tailwind, users can add posts and likes in this app. comments,
+                follow & chat with other users.
+              </p>
+              <div class="tech-used">
+                <span>React</span>
+                <span>Firebase</span>
+                <span>Tailwind CSS</span>
+              </div>
+              <div class="btn-group">
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-earth-americas"></i> Demo
+                </button>
+                <button class="btn btn-secondary">
+                  <i class="fa-brands fa-github"></i> Github
+                </button>
               </div>
             </div>
-            <div class="right-panel">
-              <img src="./assets/website-development.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="project">
+        <div class="container">
+          <div class="row">
+            <div class="col project-img ecommerce">
+              <!-- <img src="./assets/tesla-full-website.png" alt="tesla homepage" /> -->
             </div>
+            <div class="col project-description">
+              <h2 class="project__title">E-Commerce Website</h2>
+              <p class="project__details">
+                A full-stack MERN app built using Next.js, and Tailwind CSS, the
+                site will include basic features a normal e-commerce website
+                should have like adding new products, searching & filtering, and
+                payment integration.
+              </p>
+              <div class="btn-group">
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-earth-americas"></i> Demo
+                </button>
+                <button class="btn">
+                  <i class="fa-brands fa-github"></i> Github
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="project">
+        <div class="container">
+          <div class="row">
+            <div class="col project-img forum">
+              <!-- <img src="./assets/tesla-full-website.png" alt="tesla homepage" /> -->
+            </div>
+            <div class="col project-description">
+              <h2 class="project__title">Forum Homepage</h2>
+              <p class="project__details">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                numquam deserunt repudiandae et ducimus dolore provident
+                reiciendis exercitationem excepturi illo a aperiam accusantium
+                enim cum aspernatur error, est possimus reprehenderit iste
+                explicabo earum distinctio repellat! Error recusandae, provident
+                totam, rerum inventore vero officiis voluptatem voluptate at
+                esse libero, quidem dignissimos.
+              </p>
+              <div class="btn-group">
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-earth-americas"></i> Demo
+                </button>
+                <button class="btn btn-secondary">
+                  <i class="fa-brands fa-github"></i> Github
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project">
+        <div class="container">
+          <div class="row">
+            <div class="col project-img tesla">
+              <!-- <img src="./assets/tesla-full-website.png" alt="tesla homepage" /> -->
+            </div>
+            <div class="col project-description">
+              <h2 class="project__title">Tesla Homepage</h2>
+              <p class="project__details">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                numquam deserunt repudiandae et ducimus dolore provident
+                reiciendis exercitationem excepturi illo a aperiam accusantium
+                enim cum aspernatur error, est possimus reprehenderit iste
+                explicabo earum distinctio repellat! Error recusandae, provident
+                totam, rerum inventore vero officiis voluptatem voluptate at
+                esse libero, quidem dignissimos.
+              </p>
+              <div class="btn-group">
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-earth-americas"></i> Demo
+                </button>
+                <button class="btn btn-secondary">
+                  <i class="fa-brands fa-github"></i> Github
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tech-stack">
+        <div class="container">
+          <h2 class="section__heading">Tools & skills</h2>
+          <div class="grid">
+            <div class="box">
+              <img
+                src="./assets/tech-stack/html-5-svgrepo-com.svg"
+                alt="HTML5 logo"
+              />
+            </div>
+            <div class="box">
+              <img
+                src="./assets/tech-stack/css-svgrepo-com.svg"
+                alt="CSS3 logo"
+              />
+            </div>
+            <div class="box">
+              <img
+                src="./assets/tech-stack/javascript-svgrepo-com.svg"
+                alt="Javascript logo"
+              />
+            </div>
+            <div class="box">
+              <img
+                src="./assets/tech-stack/react-svgrepo-com.svg"
+                alt="React logo"
+              />
+            </div>
+            <div class="box">
+              <img
+                src="./assets/tech-stack/typescript-logo-svgrepo-com.svg"
+                alt="Typescript logo"
+              />
+            </div>
+            <div class="box">
+              <img
+                src="./assets/tech-stack/nodejs-svgrepo-com.svg"
+                alt="Nodejs logo"
+              />
+            </div>
+            <div class="box">
+              <img
+                src="./assets/tech-stack/firebase-svgrepo-com.svg"
+                alt="Firebase logo"
+              />
+            </div>
+            <div class="box">
+              <img
+                src="./assets/tech-stack/tailwindcss-svgrepo-com.svg"
+                alt="Tailwindcss logo"
+              />
+            </div>
+            <div class="box">
+              <img
+                src="./assets/tech-stack/vite-svgrepo-com.svg"
+                alt="Vite logo"
+              />
+            </div>
+            <div class="box">
+              <img
+                src="./assets/tech-stack/nextjs-svgrepo-com.svg"
+                alt="Nextjs logo"
+              />
+            </div>
+            <div class="box">
+              <img
+                src="./assets/tech-stack/figma-svgrepo-com.svg"
+                alt="Figma logo"
+              />
+            </div>
+            <div class="box">
+              <img
+                src="./assets/tech-stack/git-svgrepo-com.svg"
+                alt="Git logo"
+              />
+            </div>
+            <div class="box">
+              <img
+                src="./assets/tech-stack/sass-svgrepo-com.svg"
+                alt="SASS logo"
+              />
+            </div>
+            <div class="box">
+              <img
+                src="./assets/tech-stack/socket-io-svgrepo-com.svg"
+                alt="Socket io logo"
+              />
+            </div>
+            <div class="box">
+              <img
+                src="./assets/tech-stack/vscode-svgrepo-com.svg"
+                alt="VSCode io logo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact_me">
+        <div class="container">
+          <h2 class="section__heading">Let's Work Together</h2>
+          <div class="contact_details_wrapper">
+            <form>
+              <input type="text" name="" id="" placeholder="Title" />
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="Your email address"
+              />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Your message..."
+              ></textarea>
+              <input type="submit" class="btn btn-primary" value="Submit" />
+            </form>
+            <!-- <div class="contact__details">
+              <a href="#"
+                ><img src="./assets/social-icons/github-svgrepo-com.svg" alt=""
+              /></a>
+              <a href="#"
+                ><img
+                  src="./assets/social-icons/linkedin-svgrepo-com.svg"
+                  alt=""
+              /></a>
+              <a href="#"
+                ><img
+                  src="./assets/social-icons/mail-part-3-svgrepo-com.svg"
+                  alt=""
+              /></a>
+            </div> -->
           </div>
         </div>
       </section>
