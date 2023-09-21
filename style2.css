@@ -3,20 +3,26 @@
 :root {
   --text-color-light: #212529;
   --text-color-dark: #f8f9fa;
-  --bg-color-dark: #212529;
+  --bg-color-dark: #191528;
   --bg-color-light: #f8f9fa;
-  --accent-color: #e76f51;
+  --accent-color: #7c162e;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  all: unset;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  color: var(--text-color-light);
+  color: var(--text-color-dark);
+  background-color: #110e1b;
 }
 
 /* main {
@@ -33,20 +39,19 @@ body {
 }
 
 section {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 2rem 0;
   display: grid;
-  scroll-snap-align: start;
 }
 
 section:nth-child(odd) {
-  background-color: var(--bg-color-dark);
-  color: white;
+  /* background-color: var(--bg-color-dark); */
+  /* color: white; */
 }
 
 section:nth-child(even) {
-  background-color: var(--bg-color-light);
-  color: var(--text-color);
+  /* background-color: var(--bg-color-light); */
+  /* color: var(--text-color); */
 }
 
 .hero {
@@ -126,6 +131,7 @@ section:nth-child(even) {
 .btn-group {
   display: flex;
   gap: 2rem;
+  justify-content: center;
 }
 
 .btn {
@@ -180,6 +186,10 @@ section:nth-child(even) {
     transform: translateY(20px);
     opacity: 1;
   }
+}
+
+.project {
+  margin: 5rem 0;
 }
 
 .project .container {
@@ -242,7 +252,7 @@ section:nth-child(even) {
 }
 
 .project {
-  background-color: #e76f51;
+  /* background-color: #e76f51; */
 }
 
 .tech-used {
@@ -262,7 +272,7 @@ section:nth-child(even) {
 
 .tech-stack {
   /* background-image: url("https://images.pexels.com/photos/16348797/pexels-photo-16348797/free-photo-of-mosque-chinatown.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
-  background-color: var(--bg-color-dark);
+  /* background-color: var(--bg-color-dark); */
 }
 
 .section__heading {
@@ -276,8 +286,8 @@ section:nth-child(even) {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
   padding: 1rem;
   /* border: 1px solid lightgray; */
 }
@@ -342,12 +352,45 @@ textarea {
   all: unset;
   padding: 0.5rem;
   border-radius: 0.25rem;
-  background-color: var(--bg-color-light);
-  color: var(--text-color-light);
+  background-color: #003459;
+  color: var(--text-color-dark);
 }
 
 input[type="submit"] {
   align-self: flex-start;
+}
+
+#scrolling-mouse {
+  width: 1.5rem;
+  height: 3rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+  position: relative;
+}
+
+#scrolling-mouse::before {
+  position: absolute;
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: white;
+  border-radius: 50%;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  animation: animateMouseWheel 1.5s infinite;
+}
+
+@keyframes animateMouseWheel {
+  from {
+    top: 70%;
+    opacity: 0;
+  }
+
+  to {
+    top: 10%;
+    opacity: 1;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -361,5 +404,9 @@ input[type="submit"] {
 
   .grid {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .btn-group {
+    justify-content: flex-start;
   }
 }
